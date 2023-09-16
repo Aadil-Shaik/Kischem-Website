@@ -52,10 +52,16 @@ font-weight: 600;
     height: 100vh;
 }
 .line{
-    width: 20px;
+    min-width: 5px;
     height: auto;
     background-color: black;
     margin-left:32px ;
+}
+.linehorizontal{
+    width: 400px;
+    min-height: 5px;
+    background-color: black;
+    margin: 8px auto;
 }
 .about{
     display: flex;
@@ -68,9 +74,121 @@ font-weight: 600;
 
 }
 .products{
-    padding: 0 10vw;
+    padding:0 10vw;
     font-size: 19px;
 }
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    gap: 32px;
+}
+.item{
+    margin: 32px 0;
+    padding: 32px;
+    border: 5px solid black;
+    border-radius: 8px;
+    width: 500px;
+}
+.itemimage{
+    width: 400px;
+    height: 320px;
+}
+.itemtitle{
+    font-size: 24px;
+    padding: 16px 0;
+}
+.itemdesc{
+    font-size: 16px;
+}
+.itemhidden1{
+    font-size: 16px;
+    display: none;
+    transition: 0.5s linear;
+}
+#check1{
+    display: none;
+}
+#check1:checked ~ .itemhidden1{
+    display: block;
+}
+#check1:checked ~ label{
+visibility: hidden;
+}
+#check1:checked ~ label:after{
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+}
+
+.itemhidden2{
+    font-size: 16px;
+    display: none;
+    transition: 0.5s linear;
+}
+#check2{
+    display: none;
+}
+#check2:checked ~ .itemhidden2{
+    display: block;
+}
+#check2:checked ~ label{
+visibility: hidden;
+}
+#check2:checked ~ label:after{
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+}
+
+.itemhidden3{
+    font-size: 16px;
+    display: none;
+    transition: 0.5s linear;
+}
+#check3{
+    display: none;
+}
+#check3:checked ~ .itemhidden3{
+    display: block;
+}
+#check3:checked ~ label{
+visibility: hidden;
+}
+#check3:checked ~ label:after{
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+}
+
+.itemhidden4{
+    font-size: 16px;
+    display: none;
+    transition: 0.5s linear;
+}
+#check4{
+    display: none;
+}
+#check4:checked ~ .itemhidden4{
+    display: block;
+}
+#check4:checked ~ label{
+visibility: hidden;
+}
+#check4:checked ~ label:after{
+    content: 'Show Less';
+    display: block;
+    visibility: visible;
+}
+
+label{
+color: royalblue;
+cursor: pointer;
+text-decoration: underline;
+font-size: 16px;
+}
+
 .contacts{
     padding: 32px 10vw;
 }
